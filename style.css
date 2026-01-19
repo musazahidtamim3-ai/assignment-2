@@ -460,6 +460,22 @@ footer .flex {
     .about h3{
         font-size: 2rem;
     }
+    #choose{
+        padding-top: 5%;
+    }
+    .choose-container{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 5% 2% 20%;
+    }
+    .choose{
+        grid-column: span 1;
+        grid-row: span 1;
+        width: 100%;
+        padding: 5%;
+    }
+    .choose .five{
+        padding-bottom: 5%;
+    }
 }
 
 /* ==================================== above 992 px ======================================= */
@@ -467,5 +483,8 @@ footer .flex {
     header{
         width: 100%;
         padding: 15px 30px;
+    }
+    .choose-container{
+        padding: 5% 2% ;
     }
 }
