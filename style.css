@@ -1,38 +1,46 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Inter", sans-serif;
 }
-.hidden{
+
+.hidden {
     display: none;
 }
+
 /* ================================ header styles =========================================== */
-header{
-    
+header {
+
     background-color: #1A0B2E;
     border: 1px solid #412567;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 0;
-    
+
 }
-nav ul{
+
+nav ul {
     list-style: none;
     display: flex;
     gap: 32px;
 }
-li a{
+
+li a {
     text-decoration: none;
     color: white;
     font-weight: 500;
 }
-.brand, .navbar, .buttons{
+
+.brand,
+.navbar,
+.buttons {
     max-width: 1200px;
     margin: 0 auto;
 }
-.btn{
+
+.btn {
     background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
     color: white;
     padding: 12px 20px;
@@ -43,47 +51,76 @@ li a{
     gap: 5px;
     align-items: center;
 }
-/* ============================================== banner styles ==================================== */
-#banner{
-    background-image: url("./assets/hero-bg.png");
-    background-size: 100%;
-}
-.banner-image{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 6%;
-    
+
+.menu {
+    display: none;
 }
 
-.first{
+/* ============================================== banner styles ==================================== */
+#banner {
+    background-image: url("./assets/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.banner-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.banner-image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    padding-top: 20%;
+}
+.image-wrapper{
     position: relative;
+    display: inline-block;
 }
-.second{
+.first {
+    width: 100%;
+    display: block;
+}
+
+.second {
     position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
 }
-.banner-content{
+
+.banner-content {
     text-align: center;
     color: white;
 }
-.banner-content h1{
+
+.banner-content h1 {
     margin-top: 40px;
     margin-bottom: 8px;
     font-size: 3.5rem;
     font-weight: 800;
 }
-.banner-content p{
+
+.banner-content p {
     font-weight: 400;
     color: rgba(255, 255, 255, 1);
     margin-bottom: 24px;
 }
-.banner-content .buttons{
+
+.banner-content .buttons {
     padding-bottom: 100px;
     display: flex;
     justify-content: center;
     gap: 8px;
 }
-.buttons .btc{
+
+.buttons .btc {
     background-color: transparent;
     border: 1px solid #00FF88;
     padding: 12px 20px;
@@ -94,14 +131,15 @@ li a{
     gap: 5px;
     align-items: center;
 }
-.new-button p{
+
+.new-button p {
     background-color: #00FF88;
     color: #1A0B2E;
     font-weight: 500;
-    padding: .5% 1.5%;
+    padding: 2.5% 6.5%;
     position: absolute;
-    top: 30%;
-    left: 54%;
+    top: 10%;
+    right: 5%;
     border-radius: 20px;
     filter: drop-shadow(0px 2px 15px rgba(0, 255, 136, 0.5));
     transform: scale(1);
@@ -110,38 +148,49 @@ li a{
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
-@keyframes pulse-scale{
-    0%{
+
+@keyframes pulse-scale {
+    0% {
         transform: scale(1);
     }
-    50%{
-       transform: scale(1.3); 
+
+    50% {
+        transform: scale(1.3);
     }
-    100%{
+
+    100% {
         transform: scale(1);
     }
 }
+
 /* ========================== about styles ============================================== */
-#about{
+#about {
     background-color: #1A0B2E;
     color: white;
 }
-#about .about-content, #about .about-container{
+
+#about .about-content,
+#about .about-container {
     max-width: 1200px;
     margin: 0 auto;
 }
-.about-content h1, #choose h1, #videos h1{
+
+.about-content h1,
+#choose h1,
+#videos h1 {
     padding-top: 5%;
     text-align: center;
     font-size: 3rem;
     font-weight: 700;
 }
-.about-content p{
+
+.about-content p {
     padding-top: 1.6%;
     text-align: center;
     line-height: 170%;
 }
-.about-container{
+
+.about-container {
     padding-top: 10%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -149,22 +198,27 @@ li a{
     text-align: center;
     padding-bottom: 12%;
 }
-.about-container h3{
+
+.about-container h3 {
     color: #00FF88;
     font-size: 3rem;
     font-weight: 900;
     margin-bottom: 1.6%;
 }
+
 /* ========================================== choose section ============================= */
-#choose{
+#choose {
     background-color: #230E3D;
     color: white;
 }
-#choose h1, .choose-container{
+
+#choose h1,
+.choose-container {
     max-width: 1200px;
     margin: 0 auto;
 }
-.choose-container{
+
+.choose-container {
     padding-top: 4%;
     padding-bottom: 12%;
     display: grid;
@@ -172,45 +226,58 @@ li a{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
 }
-.choose{
+
+.choose {
     background-color: rgba(53, 17, 101, 0.4);
     border-radius: 4%;
 }
-.one{
+
+.one {
     grid-column: span 1;
     grid-row: span 2;
     padding: 100px 40px;
 }
-.two, .three, .four{
+
+.two,
+.three,
+.four {
     grid-column: span 2;
-    grid-row: span 1;  
+    grid-row: span 1;
     padding: 40px;
 }
-.five{
+
+.five {
     padding: 40px;
 }
-.choose img{
+
+.choose img {
     margin-bottom: 16px;
 }
-.choose h3{
+
+.choose h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 16px;
 }
-.choose p{
+
+.choose p {
     line-height: 150%;
 }
+
 /* ================================= videos section ========================================== */
-#videos{
+#videos {
     background-color: #1A0B2E;
     color: white;
     padding: 5%;
 }
-#videos h1, .video-container{
+
+#videos h1,
+.video-container {
     max-width: 1200px;
     margin: 0 auto;
 }
-.video-container{
+
+.video-container {
     padding-top: 4%;
     margin-bottom: 2%;
     display: grid;
@@ -218,37 +285,43 @@ li a{
     gap: 30px;
 }
 
-.video{
+.video {
     background-color: #250D44;
     border-radius: 4%;
     max-height: 90%;
 }
-.video h3{
+
+.video h3 {
     font-size: 1.5rem;
     font-weight: 700;
     padding: 12px 24px;
 }
+
 .video p {
     line-height: 150%;
     padding: 12px 24px;
 }
-iframe{
+
+iframe {
     width: 100%;
     max-height: 50%;
     border-radius: 5% 5% 0% 0%;
 }
-.time{
+
+.time {
     display: flex;
     padding: 12px 24px 0px;
     align-items: center;
     color: #00FF88;
     font-weight: 600;
 }
-.time img{
+
+.time img {
     width: 5%;
     height: 5%;
 }
-.host{
+
+.host {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
@@ -259,28 +332,33 @@ iframe{
     border-radius: 8px;
     margin-top: 5%;
 }
-.host h3{
+
+.host h3 {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 12px;
 }
-.host p{
+
+.host p {
     line-height: 150%;
     margin-bottom: 12px;
 }
-.icons{
+
+.icons {
     display: flex;
     gap: 8px;
 }
-.icons img{
+
+.icons img {
     width: 50px;
     height: 50px;
     border: 1px solid #533C72;
     padding: 10px;
-    border-radius: 50%;  
+    border-radius: 50%;
 }
+
 /* ================================ footer styles ===================================== */
-footer{
+footer {
     background-image: url("./assets/footer-bg.png");
     background-size: 100%;
     color: white;
@@ -291,18 +369,60 @@ footer{
     justify-content: center;
     align-items: center;
 }
-footer .flex{
+
+footer .flex {
     display: flex;
     justify-content: center;
 }
-.icon{
+
+.icon {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 50px;
 }
-.spotify, .apple, .youtube, .twitter{
+
+.spotify,
+.apple,
+.youtube,
+.twitter {
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+/* ================================= small devices ============================================ */
+@media screen and (max-width: 576px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        width: 100%;
+    }
+    .brand{
+        display: flex;
+        margin-left: 0;
+    }
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .navbar,
+    .buttons {
+        display: none;
+    }
+
+    .brand img {
+        width: 50%;
+    } 
+}    
+
+/* ==================================== above 992 px ======================================= */
+@media screen and (min-width: 992px) {
+    header{
+        width: 100%;
+        padding: 15px 30px;
+    }
 }
