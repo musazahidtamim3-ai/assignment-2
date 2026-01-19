@@ -417,7 +417,50 @@ footer .flex {
     .brand img {
         width: 50%;
     } 
-}    
+    .banner-content h1 {
+    margin-top: 20px;
+    padding: 0 10px;
+    font-size: 2rem;
+    font-weight: 800;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+    .banner-image {
+        margin-top: 20%;
+    }   
+    .image-wrapper{
+        position: relative;
+        display: inline-block;
+    }
+    .first {
+        width: 180px;
+    }
+    .about-content h1,
+    #choose h1,
+    #videos h1 {
+        padding-top: 5%;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .about-content p {
+        text-align: center;
+        line-height: 170%;
+        padding:  5% 2%;
+    }
+    .about-container{
+        grid-template-columns: repeat(2, 2fr);
+        row-gap: 30px;
+    }
+    .about h3{
+        font-size: 2rem;
+    }
+}
 
 /* ==================================== above 992 px ======================================= */
 @media screen and (min-width: 992px) {
