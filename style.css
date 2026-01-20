@@ -50,6 +50,11 @@ li a {
     display: flex;
     gap: 5px;
     align-items: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: linear-gradient(to right, #f7e83f67, #fb09b266, #9100f879);
 }
 
 .menu {
@@ -68,20 +73,24 @@ li a {
     align-items: center;
     justify-content: center;
 }
-.banner-container{
+
+.banner-container {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 .banner-image {
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
     padding-top: 20%;
 }
-.image-wrapper{
+
+.image-wrapper {
     position: relative;
     display: inline-block;
 }
+
 .first {
     width: 100%;
     display: block;
@@ -130,6 +139,11 @@ li a {
     display: flex;
     gap: 5px;
     align-items: center;
+    cursor: pointer;
+}
+
+.buttons .btc:hover {
+    background-color: #71747263;
 }
 
 .new-button p {
@@ -204,16 +218,19 @@ li a {
     font-weight: 900;
     margin-bottom: 1.6%;
 }
-hr{
+
+hr {
     border: .2px solid rgba(255, 255, 255, 0.064);
     width: 80%;
     margin: 0 auto;
 }
-.pro{
+
+.pro {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 /* ========================================== choose section ============================= */
 #choose {
     background-color: #230E3D;
@@ -329,9 +346,11 @@ iframe {
     width: 5%;
     height: 5%;
 }
-.time .pr{
+
+.time .pr {
     padding: 0;
 }
+
 .host {
     display: flex;
     max-width: 1200px;
@@ -365,11 +384,13 @@ iframe {
     width: 15px;
     height: 15px;
 }
-.icons .one{
+
+.icons .one {
     border: 1px solid #533C72;
     padding: 8px 10px;
     border-radius: 50%;
 }
+
 /* ================================ footer styles ===================================== */
 footer {
     background-image: url("./assets/footer-bg.png");
@@ -403,9 +424,11 @@ footer .flex {
     align-items: center;
     gap: 8px;
 }
-footer p{
+
+footer p {
     text-align: center;
 }
+
 /* ================================= small devices ============================================ */
 @media screen and (max-width: 576px) {
     header {
@@ -415,10 +438,12 @@ footer p{
         padding: 20px 20px;
         width: 100%;
     }
-    .brand{
+
+    .brand {
         display: flex;
         margin-left: 0;
     }
+
     .menu {
         display: block;
         cursor: pointer;
@@ -431,22 +456,24 @@ footer p{
 
     .brand img {
         width: 50%;
-    } 
+    }
+
     #banner {
-    background-image: url("./assets/Image.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        background-image: url("./assets/Image.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .banner-content h1 {
-    margin-top: 20px;
-    padding: 0 10px;
-    font-size: 2rem;
-    font-weight: 800;
+        margin-top: 20px;
+        padding: 0 10px;
+        font-size: 2rem;
+        font-weight: 800;
     }
 
     .banner-content p {
@@ -454,19 +481,24 @@ footer p{
         padding: 0 20px;
         margin-bottom: 20px;
     }
-    .image-wrapper{
+
+    .image-wrapper {
         position: relative;
         display: inline-block;
     }
+
     .first {
         width: 180px;
     }
+
     .buttons .btc {
-    padding: 8px 12px;
-}
-.banner-content .buttons .btn{
-    padding: 8px 12px;
-}
+        padding: 8px 12px;
+    }
+
+    .banner-content .buttons .btn {
+        padding: 8px 12px;
+    }
+
     .about-content h1,
     #choose h1,
     #videos h1 {
@@ -479,77 +511,327 @@ footer p{
     .about-content p {
         text-align: center;
         line-height: 170%;
-        padding:  5% 5%;
+        padding: 5% 5%;
     }
-    .about-container{
+
+    .about-container {
         grid-template-columns: repeat(2, 2fr);
         row-gap: 30px;
     }
-    .about h3{
+
+    .about h3 {
         font-size: 2rem;
     }
-    #choose{
+
+    #choose {
         padding-top: 5%;
     }
-    .choose-container{
+
+    .choose-container {
         grid-template-columns: repeat(1, 1fr);
         padding: 5% 5% 20%;
     }
-    .choose{
+
+    .choose {
         grid-column: span 1;
         grid-row: span 1;
         width: 100%;
         padding: 5%;
     }
-    .choose .five{
+
+    .choose .five {
         padding-bottom: 5%;
     }
+
     .video-container {
-    grid-template-columns: repeat(1, 1fr);
-    gap: 1px;
-}
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1px;
+    }
 
-.video {
-    background-color: #250D44;
-    border-radius: 4%;
-    height: 600px;
-}
+    .video {
+        background-color: #250D44;
+        border-radius: 4%;
+        height: 600px;
+    }
 
-.video h3 {
-    font-size: 1.5rem;
-    font-weight: 700;
-    padding: 10px 24px;
-}
+    .video h3 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        padding: 10px 24px;
+    }
 
-.video p {
-    line-height: 150%;
-    padding: 0px 24px 10px;
-}
-    .host{
+    .video p {
+        line-height: 150%;
+        padding: 0px 24px 10px;
+    }
+
+    .host {
         flex-direction: column;
         text-align: center;
     }
-    .icons{
+
+    .icons {
         justify-content: center;
     }
+
     .icon {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         margin: auto;
-        
+
         justify-items: center;
         gap: 20px;
         padding: 3% 0;
+    }
+
+    footer {
+        background-image: url("./assets/footer\ \(2\).png");
+    }
 }
+
+/* ===================================== laptop devices =================================== */
+@media screen and (min-width: 577px) and (max-width: 991px) {
+    header {
+        padding: 30px 0;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 22px;
+    }
+
+    .btn {
+        background: linear-gradient(to right, #F7E93F, #FB09B4, #9100F8);
+        color: white;
+        padding: 8px 12px;
+        border: none;
+        border-radius: 20px;
+        font-weight: 600;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .brand img {
+        width: 60%;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    #banner {
+        background-image: url("./assets/hero-bg.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .banner-content h1 {
+        margin-top: 10%;
+        padding: 0 10px;
+        font-size: 2rem;
+        font-weight: 800;
+    }
+
+    .banner-content p {
+        font-size: 1rem;
+        padding: 0 20px;
+        margin-bottom: 20px;
+    }
+
+    .image-wrapper {
+        position: relative;
+        display: inline-block;
+    }
+
+    .first {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .buttons .btc {
+        padding: 8px 12px;
+    }
+
+    .banner-content .buttons .btn {
+        padding: 8px 12px;
+    }
+
+    .about-content h1,
+    #choose h1,
+    #videos h1 {
+        padding: 5% 5% 0;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .about-content p {
+        text-align: center;
+        line-height: 170%;
+        padding: 5% 5%;
+    }
+
+    .about-container {
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 30px;
+    }
+
+    .about-content h3 {
+        font-size: 1rem;
+    }
+
+    .about-content p {
+        font-size: .7rem;
+    }
+
+    .about h3 {
+        font-size: 2rem;
+    }
+
+    .about p {
+        font-size: .7rem;
+    }
+
+    .choose-container {
+        max-width: 991px;
+        margin: 0 auto;
+        padding: 2% 5% 10%;
+        display: grid;
+        gap: 3%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .choose {
+        background-color: rgba(53, 17, 101, 0.4);
+        border-radius: 2%;
+    }
+
+    .one {
+        grid-column: span 1;
+        grid-row: span 2;
+        padding: 80px 20px;
+    }
+
+    .two,
+    .three,
+    .four {
+        grid-column: span 2;
+        grid-row: span 1;
+        padding: 20px;
+    }
+
+    .five {
+        padding: 20px;
+    }
+
+    .choose img {
+        margin-bottom: 10px;
+    }
+
+    .choose h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .choose p {
+        line-height: 130%;
+        font-size: .7rem;
+    }
+
+    .video-container {
+        padding-top: 4%;
+        margin-bottom: -30%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3%;
+    }
+
+    .video {
+        background-color: #250D44;
+        border-radius: 4%;
+        max-height: 60%;
+    }
+
+    .video h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        padding: 10px 20px 2px;
+    }
+
+    .video .par {
+        line-height: 150%;
+        padding: 10px 20px 2px;
+        font-size: .7rem;
+    }
+
+    iframe {
+        width: 100%;
+        max-height: 40%;
+        border-radius: 5% 5% 0% 0%;
+    }
+
+    .time {
+        display: flex;
+        padding: 12px 24px 0px;
+        align-items: center;
+        gap: 8px;
+        color: #00FF88;
+        font-weight: 600;
+        font-size: .7rem;
+    }
+
+    .time img {
+        width: 5%;
+        height: 5%;
+    }
+
+    .time .pr {
+        padding: 0;
+    }
+
+    .host {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .host h3 {
+        font-size: 1rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+    }
+
+    .host p {
+        line-height: 150%;
+        margin-bottom: 12px;
+        font-size: .7rem;
+    }
+
+    footer {
+        background-image: url("./assets/footer-bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
 }
 
 /* ==================================== above 992 px ======================================= */
 @media screen and (min-width: 992px) {
-    header{
+    header {
         width: 100%;
         padding: 15px 30px;
     }
-    .choose-container{
-        padding: 5% 2% ;
+
+    .choose-container {
+        padding: 5% 2%;
     }
 }
